@@ -1,0 +1,228 @@
+1. length() / size()
+
+Returns the number of characters.
+
+string s = "Hello";
+
+cout << s.length();   // 5
+cout << s.size();     // 5
+2. substr()
+
+Returns a part of the string.
+
+Syntax
+
+s.substr(start, length)
+
+Example:
+
+string s = "Programming";
+
+cout << s.substr(3,4);
+
+Output
+
+gram
+
+Another example:
+
+string s = "abcdef";
+
+cout << s.substr(2);
+
+Output
+
+cdef
+3. find()
+
+Finds the first occurrence.
+
+string s = "hello";
+
+cout << s.find('l');
+
+Output
+
+2
+
+If not found:
+
+cout << s.find('z');
+
+Output
+
+string::npos
+4. append()
+string a = "Hello";
+a.append(" World");
+
+cout << a;
+
+Output
+
+Hello World
+5. push_back()
+
+Adds one character.
+
+string s = "abc";
+
+s.push_back('d');
+
+cout << s;
+
+Output
+
+abcd
+6. pop_back()
+
+Removes the last character.
+
+string s = "abcd";
+
+s.pop_back();
+
+cout << s;
+
+Output
+
+abc
+7. erase()
+
+Remove characters.
+
+string s = "Programming";
+
+s.erase(3,4);
+
+cout << s;
+
+Output
+
+Proming
+8. insert()
+string s = "Hllo";
+
+s.insert(1,"e");
+
+cout << s;
+
+Output
+
+Hello
+9. replace()
+string s = "I like Java";
+
+s.replace(7,4,"C++");
+
+cout << s;
+
+Output
+
+I like C++
+10. compare()
+string a = "abc";
+string b = "abc";
+
+cout << a.compare(b);
+
+Output
+
+0
+0 → Equal
+Positive → First string is greater
+Negative → First string is smaller
+11. empty()
+string s="";
+
+cout<<s.empty();
+
+Output
+
+1
+12. clear()
+string s="Hello";
+
+s.clear();
+
+cout<<s;
+
+Output
+
+(String becomes empty.)
+
+13. at()
+string s="Hello";
+
+cout<<s.at(1);
+
+Output
+
+e
+14. front()
+string s="Hello";
+
+cout<<s.front();
+
+Output
+
+H
+15. back()
+string s="Hello";
+
+cout<<s.back();
+
+Output
+
+o
+16. swap()
+string a="Hello";
+string b="World";
+
+a.swap(b);
+
+cout<<a<<" "<<b;
+
+Output
+
+World Hello
+17. Concatenation (+)
+string a="Hello";
+string b="World";
+
+cout<<a+" "+b;
+
+Output
+
+Hello World
+18. Access Characters
+string s="Hello";
+
+cout<<s[0];
+
+Output
+
+H
+19. Loop Through String
+string s="Hello";
+
+for(char c:s)
+{
+    cout<<c<<" ";
+}
+
+Output
+
+H e l l o
+20. Reverse a String
+#include <algorithm>
+
+string s="Hello";
+
+reverse(s.begin(),s.end());
+
+cout<<s;
+
+Output
+
+olleH
